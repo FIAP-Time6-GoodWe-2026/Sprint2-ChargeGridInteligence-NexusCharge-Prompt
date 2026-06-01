@@ -15,10 +15,10 @@ INTEGRANTES:
 
 ----------------------------------------------------
 REPOSITÓRIO GITHUB:
-https://github.com/brayanbarbosa-lab/chargegrid-assistant
+https://github.com/FIAP-Time6-GoodWe-2026/Sprint2-ChargeGridInteligence-NexusCharge-Prompt
 ----------------------------------------------------
 VÍDEO DE DEMONSTRAÇÃO (YouTube — não listado):
-*(preencha com o link do vídeo)*
+Criando
 ----------------------------------------------------
 
 RESUMO DA IMPLEMENTAÇÃO:
