@@ -1,0 +1,33 @@
+====================================================
+  ENTREGA — SPRINT 2
+  Disciplina: Prompt and Artificial Intelligence
+  EV Challenge 2026 — GoodWe × FIAP
+  Turma: 1CCPZ (Ciências da Computação — Noturno)
+====================================================
+
+INTEGRANTES:
+  Alan Junio Araujo de Souza        | RM: 574112
+  Arthur Vettorazzo de Souza        | RM: 569445
+  Brayan Barbosa Dos Santos         | RM: 573682
+  Giovanne Gomes Petenuci           | RM: 574091
+  Gustavo Zibini Belizario          | RM: 561376
+  Luiz Otávio Brito Freixo          | RM: 569977
+
+----------------------------------------------------
+REPOSITÓRIO GITHUB:
+https://github.com/brayanbarbosa-lab/chargegrid-assistant
+----------------------------------------------------
+VÍDEO DE DEMONSTRAÇÃO (YouTube — não listado):
+*(preencha com o link do vídeo)*
+----------------------------------------------------
+
+RESUMO DA IMPLEMENTAÇÃO:
+  Projeto     : ChargeGrid Assistant — Sprint 2
+  Plataforma  : Kaggle
+  Modelo      : DeepSeek V3 via HuggingFace Inference API
+  Técnicas    : System Prompt, Few-Shot Prompting,
+                Memória de Conversa, Function Calling
+
+====================================================
+  FIM DA ENTREGA
+====================================================
