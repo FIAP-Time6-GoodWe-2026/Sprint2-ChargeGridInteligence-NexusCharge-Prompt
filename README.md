@@ -1,9 +1,9 @@
-# ⚡ ChargeGrid Assistant — Sprint 2
+#  ChargeGrid Assistant — Sprint 2
 **EV Challenge 2026 | GoodWe × FIAP**
 
 ---
 
-## 👥 Integrantes
+##  Integrantes
 
 | Nome | RM |
 |---|---|
@@ -18,24 +18,24 @@
 
 ---
 
-## 🚀 O que foi implementado na Sprint 2
+##  O que foi implementado na Sprint 2
 
 Esta sprint entrega o chatbot funcional planejado na Sprint 1, com as
 seguintes evoluções em relação ao planejamento inicial:
 
 | Funcionalidade | Status |
 |---|---|
-| System prompt com contexto ChargeGrid | ✅ Implementado |
-| Memória de conversa (histórico de mensagens) | ✅ Implementado |
-| Few-Shot Prompting embutido no system prompt | ✅ Diferencial adicionado |
-| Módulo de diagnóstico com Function Calling (JSON) | ✅ Diferencial adicionado |
-| Execução dos 7 testes da Sprint 1 | ✅ Implementado |
-| Interface ipywidgets interativa | ✅ Implementado |
-| API Key via Kaggle Secrets | ✅ Implementado |
+| System prompt com contexto ChargeGrid |  Implementado |
+| Memória de conversa (histórico de mensagens) |  Implementado |
+| Few-Shot Prompting embutido no system prompt |  Diferencial adicionado |
+| Módulo de diagnóstico com Function Calling (JSON) |  Diferencial adicionado |
+| Execução dos 7 testes da Sprint 1 |  Implementado |
+| Interface ipywidgets interativa |  Implementado |
+| API Key via Kaggle Secrets |  Implementado |
 
 ---
 
-## 🛠️ Dependências
+##  Dependências
 
 ```
 huggingface_hub
@@ -49,7 +49,7 @@ pip install huggingface_hub -q
 
 ---
 
-## 🔒 Variáveis de Ambiente
+##  Variáveis de Ambiente
 
 O token de acesso ao HuggingFace deve ser configurado como Kaggle Secret:
 
@@ -57,11 +57,11 @@ O token de acesso ao HuggingFace deve ser configurado como Kaggle Secret:
 2. Nome: `HF_TOKEN`
 3. Valor: seu token gerado em [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
 
-> ⚠️ **Nunca** insira o token diretamente no código ou no repositório.
+>  **Nunca** insira o token diretamente no código ou no repositório.
 
 ---
 
-## ▶️ Como executar
+##  Como executar
 
 1. Faça fork ou importe o notebook `chargegrid_assistant_sprint2.ipynb` no Kaggle
 2. Configure o `HF_TOKEN` nos Kaggle Secrets
@@ -71,7 +71,7 @@ O token de acesso ao HuggingFace deve ser configurado como Kaggle Secret:
 
 ---
 
-## 🏗️ Decisões Arquiteturais
+##  Decisões Arquiteturais
 
 ### Injeção de contexto — Prompt Augmentation
 
@@ -99,7 +99,7 @@ a melhor opção gratuita para seguimento de system prompts complexos.
 
 ---
 
-## 🧠 Técnicas de Prompt Engineering
+##  Técnicas de Prompt Engineering
 
 | Técnica | Implementação | Justificativa |
 |---|---|---|
@@ -110,7 +110,7 @@ a melhor opção gratuita para seguimento de system prompts complexos.
 
 ---
 
-## 📊 Hiperparâmetros
+##  Hiperparâmetros
 
 | Modo | Temperature | Top-P | Max Tokens |
 |---|---|---|---|
@@ -119,7 +119,7 @@ a melhor opção gratuita para seguimento de system prompts complexos.
 
 ---
 
-## 🧪 Execução dos Casos de Teste — Sprint 1
+##  Execução dos Casos de Teste — Sprint 1
 
 Os 7 casos de teste modelados na Sprint 1 foram executados contra o chatbot implementado nesta Sprint 2. Cada teste foi avaliado qualitativamente por comparação entre a resposta obtida e a resposta esperada de referência.
 
@@ -132,13 +132,13 @@ Os 7 casos de teste modelados na Sprint 1 foram executados contra o chatbot impl
 
 | ID | Categoria | Avaliação |
 |---|---|---|
-| T01 | Tarifa e LED indicador | ✅ Adequada |
-| T02 | Tempo de recarga | ✅ Adequada |
-| T03 | Pagamento | ✅ Adequada |
-| T04 | Carga lenta | ✅ Adequada |
-| T05 | Disponibilidade e fila | ✅ Adequada |
-| T06 | Interrupção de sessão | ✅ Adequada |
-| T07 | O que é o ChargeGrid | ✅ Adequada |
+| T01 | Tarifa e LED indicador |  Adequada |
+| T02 | Tempo de recarga |  Adequada |
+| T03 | Pagamento |  Adequada |
+| T04 | Carga lenta |  Adequada |
+| T05 | Disponibilidade e fila |  Adequada |
+| T06 | Interrupção de sessão |  Adequada |
+| T07 | O que é o ChargeGrid |  Adequada |
 
 **Total: 7/7 Adequadas (100%) · 0 Parciais · 0 Inadequadas**
 
@@ -165,7 +165,7 @@ LED vermelho = tarifa alta (horário de pico). Orientar a aguardar LED verde se 
 >
 > Dica: No app ChargeGrid você pode ver a previsão de quando a tarifa deve baixar.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Cobriu todos os pontos da referência (significado do LED vermelho, recomendação condicional de aguardar, valor exato no app) e acrescentou informação útil sobre desconto para assinantes e previsão de tarifa.
 
 ---
@@ -187,7 +187,7 @@ Depende da capacidade da bateria e da potência entregue no momento. Em pico, po
 >
 > Para uma resposta precisa, consulte o app ChargeGrid — ele calcula em tempo real com base na potência que seu carro está recebendo, no estado atual da bateria e na demanda do local. O app também envia notificação quando a recarga estiver completa.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Abordou a dependência de capacidade da bateria e potência disponível, citou o impacto do horário de pico na potência e redirecionou corretamente ao app para estimativa precisa.
 
 ---
@@ -209,7 +209,7 @@ Avulso sem cadastro (PIX/cartão). Opção de assinatura com desconto, prioridad
 >
 > **Não precisa cadastro prévio** para usar, mas assinantes têm vantagens. O app (disponível para iOS/Android) permite gerenciar tudo de um só lugar.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Descreveu corretamente as três modalidades, deixou claro que o cadastro não é obrigatório e cobriu os benefícios de desconto, prioridade e cashback da assinatura.
 
 ---
@@ -225,7 +225,7 @@ Provavelmente controle de demanda funcionando corretamente. Sistema redistribui 
 **Resposta obtida:**
 > Isso é normal quando muitos carros carregam juntos. Seu carro continuará recebendo energia de forma otimizada. A velocidade aumentará assim que outros veículos terminarem suas sessões.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Cobriu os dois pontos centrais da referência: o comportamento é normal (controle de demanda funcionando) e a velocidade se normaliza quando outro veículo terminar a sessão.
 
 ---
@@ -249,7 +249,7 @@ App mostra tempo estimado de liberação por posto. Também mostra eletropostos 
 >
 > Dica: Postos em supermercados costumam ter rotatividade maior que shoppings.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Indicou o tempo estimado de liberação no app, a localização de alternativas com vagas e deixou a decisão nas mãos do usuário com informação real — exatamente o que a referência esperava.
 
 ---
@@ -265,7 +265,7 @@ Cobrado apenas pelo kWh consumido até a interrupção. Possíveis causas: carga
 **Resposta obtida:**
 > Fique tranquilo! O sistema registrou apenas a energia fornecida até o momento da interrupção. Você pode ver os detalhes no histórico do app.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Confirmou que a cobrança é proporcional ao kWh consumido até a interrupção e direcionou ao histórico no app — os dois pontos centrais da referência.
 
 ---
@@ -288,7 +288,7 @@ Sim, muito diferente. Plataforma completa com OCPP, IA, solar. Distribui potênc
 >
 > Enquanto um carregador comum só fornece energia, o ChargeGrid **otimiza todo o ecossistema de recarga** — benefício para você, para o estabelecimento e para a rede elétrica.
 
-**Avaliação: ✅ Adequada**
+**Avaliação: Adequada**
 Diferenciou claramente o ChargeGrid de um carregador comum, destacando gestão inteligente de potência, integração solar GoodWe, IA e transparência para o motorista — todos os pontos da referência.
 
 ---
