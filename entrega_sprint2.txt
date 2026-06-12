@@ -18,7 +18,7 @@ REPOSITÓRIO GITHUB:
 https://github.com/FIAP-Time6-GoodWe-2026/Sprint2-ChargeGridInteligence-NexusCharge-Prompt
 ----------------------------------------------------
 VÍDEO DE DEMONSTRAÇÃO (YouTube — não listado):
-Criando
+https://youtu.be/VA2JKAhFnm4
 ----------------------------------------------------
 
 RESUMO DA IMPLEMENTAÇÃO:
